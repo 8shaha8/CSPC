@@ -1,0 +1,44 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-09-20 19:13:44
+  Workflow ID: ce64bf14-1c8e-4344-9fb3-2f56eb896486
+  Platform: Linux-7.0.0-31-generic-x86_64-with-glibc2.43
+  Host: ufaz-HP-ProBook-4-G1i-16-inch-Notebook-AI-PC
+  User: ufaz
+  Snakemake version: 9.27.0
+  Python version: 3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]
+  Command: /home/ufaz/miniconda3/bin/snakemake --cores 1 figure.png
+  Snakefile: /home/ufaz/CSPC/PW1/Lab B/Snakefile
+  Base directory: /home/ufaz/CSPC/PW1/Lab B
+  Run directory: /home/ufaz/CSPC/PW1/Lab B
+  Working directory: /home/ufaz/CSPC/PW1/Lab B
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+plot         1
+total        1
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: Error while trying to execute, use msg=True for more detailscbc
+Execute 1 jobs...
+[Sun Sep 20 19:13:45 2026]
+localrule plot:
+    input: decay_observed.csv
+    output: figure.png
+    jobid: 0
+    reason: Missing output files: figure.png
+    resources: tmpdir=/tmp
+[Sun Sep 20 19:13:50 2026]
+Finished jobid: 0 (Rule: plot)
+1 of 1 steps (100%) done
+Complete log(s): /home/ufaz/CSPC/PW1/Lab B/.snakemake/log/2026-09-20T191344.601804.snakemake.log
+Elapsed time: 0:00:06.215078
