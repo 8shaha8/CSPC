@@ -27,3 +27,14 @@ N(t) = N0 · exp(−λt) with N0 = 5000 and λ = 0.3. The observed points and th
 curve look the same, so the data follows the law.
 `plot.py` makes `figure.png`. The `Snakefile` runs `plot.py` and only rebuilds
 the figure when the data or the script changes.
+
+##PW2 - Lab A
+**Mean acceleration:** -9.xx m/s² (standard deviation: x.xx m/s²).
+This is close to -g = -9.81 m/s², so the object is in free fall.
+
+**Why acceleration is noisy:** Each time you take a derivative, the small errors in the data get bigger. Acceleration needed two derivatives, so it is much noisier than position.
+
+**Integrating back:** I integrated the noisy acceleration to get velocity, then integrated again to get position. The largest difference from the original position was x.xx m. This shows that integration reduces noise, because random errors partly cancel when you add things up.
+
+
+
